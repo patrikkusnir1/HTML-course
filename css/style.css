@@ -1,84 +1,50 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
-    font-size: 17px;
     margin: 0;
+    font-family: arial, sans-serif;
 }
 
-h1 {
-    font-size: 45px;
-}
-
-p {
-    margin-top: 0;
-}
-
-p:last-child {
-    margin-bottom: 0;
-}
-
-.article {
-    width: 1000px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    margin-bottom: 50px;
-}
-
-.special-courses,
-.other-courses {
-    width: 1000px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.other-courses {
-    margin-top: 80px;
-    padding-bottom: 100px;
-}
-
-.special-courses-title,
-.other-courses-title {
-    font-size: 38px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.special-courses-list,
-.other-courses-list {
-    margin-top: 60px;
-}
-
-.special-course,
-.other-course {
+.news {
     box-sizing: border-box;
-    width: 700px;
-    border: 5px solid #ff7d78;
-    padding: 45px 40px;
+    width: 480px;
+    padding: 50px 20px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.special-course:nth-child(n+2),
-.other-course:nth-child(n+2) {
-    margin-top: 50px;
-}
-
-.special-course-title,
-.other-course-title {
+.news-title {
+    font-size: 22px;
     margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
 }
 
-.special-course-description,
-.other-course-description {
-    margin-top: 15px;
+.post {
+    background-color: #efefef;
+    padding: 20px;
 }
 
-.special-course-readmore {
-    display: inline-block;
-    margin-top: 30px;
+.post-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 24px;
+}
 
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 15px;
-    color: #039be5;
+.post-stats {
+    font-size: 13px;
+}
+
+.post-stats-value {
+    font-weight: 700;
+}
+
+/*
+для лекции
+*/
+
+.news-title {
+    margin-bottom: 18px;
+}
+
+.box_orange {
+    background-color: orange;
 }
