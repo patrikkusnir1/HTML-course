@@ -1,50 +1,85 @@
 body {
-    margin: 0;
-    font-family: arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    font-family: Arial;
 }
 
-.news {
-    box-sizing: border-box;
-    width: 480px;
-    padding: 50px 20px;
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.news-title {
-    font-size: 22px;
-    margin-top: 0;
-}
-
-.post {
-    background-color: #efefef;
+.form {
+    width: 640px;
     padding: 20px;
+    font-family: tahoma, sans-serif;
+    font-size: 16px;
 }
 
-.post-title {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 17px;
-    line-height: 24px;
-}
-
-.post-stats {
+.form-hint {
+    display: block;
     font-size: 13px;
-}
-
-.post-stats-value {
     font-weight: 700;
+    margin-bottom: 12px;
 }
 
-/*
-для лекции
-*/
-
-.news-title {
-    margin-bottom: 18px;
+.field {
+    box-sizing: border-box;
+    width: 640px;
+    border: 1px solid #222222;
+    padding: 15px 20px;
 }
 
-.box_orange {
-    background-color: orange;
+textarea.field {
+    width: 300px;
+    min-width: 200px;
+    max-width: 200px;
+
+    min-height: 200px;
+    font-family: inherit;
+}
+
+.button {
+    border: none;
+    padding: 15px 55px;
+    color: #ffffff;
+    background-color: #e74c3c;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-row:nth-child(n+2) {
+    margin-top: 35px;
+}
+
+.form-group {
+    display: block;
+}
+
+.field {
+    outline: 1px solid #0a0a0a;
+}
+
+.field:focus,
+.button:focus {
+    outline: 2px solid #c53b2d;
+    outline-offset: 5px;
+}
+
+.button:hover {
+    background-color: #c53b2d;
+}
+
+.field:hover {
+    border: 1px solid green;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: chocolate;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
 }
