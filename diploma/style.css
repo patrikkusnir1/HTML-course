@@ -51,6 +51,7 @@ span {
 
 span.date {
     text-transform: none;
+
 }
 
 span.author {
@@ -92,14 +93,20 @@ span.author {
     font-family: "Open Sans Bold";
     padding-top: 100px;
     padding-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
     z-index: 3;
     position: relative;
+    font-size: 45px;
+    font-weight: 400;
 }
 
 a .logo-img {
     width: 50%;
     margin-left: 40px;
     margin-top: 20px;
+    z-index: 3;
+    position: relative;
 }
 
 ul {
@@ -113,6 +120,8 @@ ul {
 ul.tags-list {
     display: flex;
     justify-content: left;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 ul.tags-list li {
@@ -134,7 +143,7 @@ li {
     text-transform: uppercase;
     text-align: right;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 section .articles {
@@ -153,9 +162,10 @@ a {
 }
 
 a.tag {
-    color: #B59F5B;
+    color: #b59f5b;
     text-transform: uppercase;
     text-align: left;
+    font-size: 14px;
 
 }
 
@@ -178,19 +188,22 @@ a.tag {
     padding-left: 30px;
 }
 
+
 .articles .card-image {
     width: 50%;
 }
 
 .articles .card-content p {
-    padding-top: 30px;
-    font-size: 19px;
+    padding-top: 20px;
+    font-size: 15px;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 .articles .card-content span {
-    color: #333;
-    font-size: 16px;
+    color: #989898;
+    font-size: 12px;
+    margin-top: 10px;
 }
 
 
@@ -199,7 +212,7 @@ a.tag {
 }
 
 .aside h2 {
-    font-size: 0.9em;
+    font-size: 14px;
     font-weight: 700;
     padding-left: 15px;
     color: #0F0D0E;
@@ -207,7 +220,7 @@ a.tag {
 
 .aside h2.aside-heading,
 aside h2.aside-heading {
-    font-size: 20px;
+    font-size: 14px;
     padding-bottom: 10px;
     text-align: center;
     position: relative;
@@ -218,10 +231,38 @@ aside h2.aside-heading {
 .new-post::after {
     content: "";
     position: absolute;
-    left: 27%;
+    left: 95px;
     bottom: 0;
-    width: 49%;
-    border-bottom: 3px solid #B59F5B;
+    width: 100px;
+    border-bottom: 3px solid #e1d9bd;
+}
+
+
+.spam-header::after {
+    content: "";
+    position: absolute;
+    left: 105px;
+    bottom: 0;
+    width: 64px;
+    border-bottom: 3px solid #e1d9bd;
+}
+
+.tags-header::after {
+    content: "";
+    position: absolute;
+    left: 105px;
+    bottom: 0;
+    width: 64px;
+    border-bottom: 3px solid #e1d9bd;
+}
+
+.topics-header::after {
+    content: "";
+    position: absolute;
+    left: 105px;
+    bottom: 0;
+    width: 64px;
+    border-bottom: 3px solid #e1d9bd;
 }
 
 .aside .block-card {
@@ -233,8 +274,13 @@ aside h2.aside-heading {
     margin-top: 50px;
 }
 
-.aside .block-card:last-of-type {
+.aside .block-card:last-of-type h2 {
     margin-bottom: 50px;
+
+}
+
+.aside .block-card:last-of-type h2 {
+    margin-left: -14px;
 }
 
 
@@ -299,7 +345,7 @@ form {
 
 input {
     font-family: inherit;
-    background-color: #fff;
+    background-color: #f4f7f6;
     width: 100%;
     padding: 10px;
     color: inherit;
@@ -350,13 +396,13 @@ form.flex {
 .noflex input {
     margin-bottom: 15px;
     border: none;
-    background-color: rgb(217, 225, 233);
+    background-color: #f4f7f6;
 }
 
 input {
-    background-color: rgb(217, 225, 233);
+    background-color: #f4f7f6;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 0.9em;
 }
 
 .tags-container {
@@ -378,38 +424,37 @@ input {
 }
 
 .topics-container p sup {
-    color: #B59F5B;
+    color: #cabb92;
     margin-left: 5px;
 }
 
-footer ul {
-    --icon-size: .8em;
-    --gutter: .5em;
-    padding: 0 0 0 var(--icon-size);
-}
-
-footer ul li {
-    padding-left: var(--gutter);
-}
-
-footer ul li::marker {
-    content: "\f00a";
-    font-family: FontAwesome;
-    font-size: var(--icon-size);
-}
-
-footer {
-    background-color: #669999;
-    margin: 0 auto;
-    display: flex;
-
-}
 
 footer img {
     width: 50px;
     height: 50px;
 }
 
-footer ul {
-    margin: 0 auto;
+footer li {
+    padding: 10px;
+    font-size: 50px;
+}
+
+.flex-footer-list {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f7f6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copyright {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.copyright span {
+    font-size: 0.9em;
+    text-transform: none;
+    font-weight: 700;
+    color: #a9a9a9;
 }
