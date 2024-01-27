@@ -412,10 +412,14 @@ input {
 }
 
 .tags-container span {
-    border: 1px solid rgb(217, 225, 233);
-    padding: 2px;
+    border: 1px solid #eeeeee;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 5px 3px;
     font-weight: 700;
+    font-size: 12px;
 }
 
 .topics-container p {
